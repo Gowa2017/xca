@@ -18,21 +18,21 @@ jobs:
         - os: ubuntu
           generator: Unix Makefiles
           openssl_root: /usr
-          artifact: ${{github.workspace}}/build/xca-*-Linux.tar.gz
+          artifact: build/xca-*-Linux.tar.gz
           host: linux
 
         - os: macos
           generator: Unix Makefiles
           openssl_root: /usr/local/opt/openssl@1.1
-          artifact: ${{github.workspace}}/build/xca-*.dmg
+          artifact: build/xca-*.dmg
           host: mac
 
         - os: windows
           generator: MinGW Makefiles
           openssl_root: D:\msys2\msys64\mingw64
           artifact: |
-             ${{github.workspace}}/build/xca-*.msi
-             ${{github.workspace}}/build/xca-portable-*.zip
+             build/xca-*.msi
+             build/xca-portable-*.zip
           host: windows
 
         - os: windows
