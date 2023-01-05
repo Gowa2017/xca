@@ -103,6 +103,7 @@ static const QList<int> other_curve_nids()
 	NID_wap_wsg_idm_ecid_wtls10,
 	NID_wap_wsg_idm_ecid_wtls11,
 	NID_wap_wsg_idm_ecid_wtls12,
+	NID_sm2p256v1,
 
 #ifdef NID_brainpoolP160r1
 	NID_brainpoolP160r1,
