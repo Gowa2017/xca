@@ -45,6 +45,9 @@ include_directories(${PROJECT_BINARY_DIR} ${PROJECT_SOURCE_DIR})
 
 set(PSQL_BINDIR "")
 set(MYSQL_BINDIR "")
+set(OPENSSL_ROOT_DIR ${HOME}/Repo/GmSSL)
+set(QT_DIR /usr/local/opt/qt@5//lib/cmake/Qt5/)
+set(Qt5_DIR /usr/local/opt/qt@5//lib/cmake/Qt5/)
 
 if (APPLE)
   execute_process(COMMAND brew --prefix OUTPUT_STRIP_TRAILING_WHITESPACE
