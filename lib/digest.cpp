@@ -13,7 +13,7 @@
 
 const QList<int> digest::all_digests(
 	{ NID_md5, NID_ripemd160, NID_sha1,
-	  NID_sha224, NID_sha256, NID_sha384, NID_sha512
+	  NID_sha224, NID_sha256, NID_sha384, NID_sha512, NID_sm2sign_with_sm3
 });
 
 int digest::default_md(NID_sha256);
@@ -37,6 +37,7 @@ digest::digest(const QString &name) : md_nid(default_md)
 		return;
 	}
 	md_nid = OBJ_txt2nid(CCHAR(s.remove(QChar(' '))));
+	openssl_error();
 	ign_openssl_error();
 }
 

@@ -386,7 +386,7 @@ QList<int> pki_key::possibleHashNids()
 			break;
 		case EVP_PKEY_EC:
 			nids << NID_sha1  << NID_sha224 << NID_sha256 <<
-				NID_sha384 << NID_sha512;
+				NID_sha384 << NID_sha512 << NID_sm2sign_with_sm3;
 			break;
 	}
 	return nids;
